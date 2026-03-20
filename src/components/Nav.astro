@@ -5,14 +5,14 @@ import ThemeToggle from './ThemeToggle.astro';
 
 /** Main menu items */
 const textLinks: { label: string; href: string }[] = [
-	{ label: 'Home', href: '/' },
-	{ label: 'Work', href: '/work/' },
-	{ label: 'About', href: '/about/' },
+	{ label: 'Accueil', href: '/' },
+	{ label: 'Projets', href: '/work/' },
+	{ label: 'A propos de moi', href: '/about/' },
 ];
 
 /** Icon links to social media — edit these with links to your profiles! */
 const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[] = [
-{ label: 'LinkedIn', href: 'https://www.linkedin.com/in/telio-letalle/', icon: 'linkedin-logo' },
+	{ label: 'LinkedIn', href: 'https://www.linkedin.com/in/telio-letalle/', icon: 'linkedin-logo' },
 	{ label: 'GitHub', href: 'https://github.com/telio-letalle', icon: 'github-logo' },
 	{ label: 'Gitlab', href: 'https://gitlabinfo.iutmontp.univ-montp2.fr/letallet', icon: 'gitlab-logo' },
 	{ label: 'YouTube', href: 'https://www.youtube.com/@me/', icon: 'youtube-logo' },
@@ -30,7 +30,7 @@ const isCurrentPage = (href: string) => {
 <nav>
 	<div class="menu-header">
 		<a href="/" class="site-title">
-			<Icon icon="terminal-window" color="var(--accent-regular)" size="1.6em" gradient />
+			<Icon icon="terminal-window" color="var(--accent-regular)" size="2.em" gradient />
 			Telio Letalle
 		</a>
 		<menu-button>
@@ -203,13 +203,10 @@ const isCurrentPage = (href: string) => {
 	.nav-items {
 		margin: 0;
 		display: flex;
-		flex-direction: column;
-		gap: 1rem;
 		font-size: var(--text-md);
 		line-height: 1.2;
 		list-style: none;
-		padding: 2rem;
-		background-color: var(--gray-999);
+		padding: 10.5rem;
 		border-bottom: 1px solid var(--gray-800);
 	}
 
@@ -226,7 +223,6 @@ const isCurrentPage = (href: string) => {
 	.menu-footer {
 		--icon-size: var(--text-xl);
 		--icon-padding: 0.5rem;
-
 		display: flex;
 		justify-content: space-between;
 		gap: 0.75rem;
@@ -286,10 +282,12 @@ const isCurrentPage = (href: string) => {
 		.nav-items {
 			position: relative;
 			flex-direction: row;
-			font-size: var(--text-sm);
+			flex-direction: row;
+			font-size: 15px;
 			border-radius: 999rem;
 			border: 0;
-			padding: 0.5rem 0.5625rem;
+			padding: 0.5em 0.8rem;
+			gap: 1.5rem;
 			background: radial-gradient(var(--gray-900), var(--gray-800) 150%);
 			box-shadow: var(--shadow-md);
 		}
@@ -304,7 +302,7 @@ const isCurrentPage = (href: string) => {
 		}
 
 		.link {
-			padding: 0.5rem 1rem;
+			padding: 0.7rem 1rem;
 			border-radius: 999rem;
 			transition:
 				color var(--theme-transition),
@@ -334,6 +332,7 @@ const isCurrentPage = (href: string) => {
 
 		.socials {
 			display: none;
+			padding: ;
 		}
 	}
 
@@ -342,6 +341,7 @@ const isCurrentPage = (href: string) => {
 			display: flex;
 			justify-content: flex-end;
 			gap: 0;
+			--icon-size: 2.4rem;
 		}
 	}
 	@media (forced-colors: active) {

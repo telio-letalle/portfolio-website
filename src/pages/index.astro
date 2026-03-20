@@ -27,23 +27,19 @@ const projects = (await getCollection('work'))
 		<div class="wrapper stack gap-8 lg:gap-20">
 			<header class="hero">
 				<Hero
-					title="Bonjour, my name is Jeanine White"
-					tagline="I am a Creative Developer who is currently based in Portland, Oregon."
+					title="Telio Letalle"
+					tagline="Etudiant en BUT Informatique, basé dans l'Hérault, en France."
 					align="start"
 				>
 					<div class="roles">
-						<Pill><Icon icon="code" size="1.33em" /> Developer</Pill>
-						<Pill><Icon icon="microphone-stage" size="1.33em" /> Speaker</Pill>
-						<Pill><Icon icon="pencil-line" size="1.33em" /> Writer</Pill>
+						<Pill><Icon icon="code" size="1.33em" /> Developpeur</Pill>
+					</div>
+					<h5>Liens utiles :</h5>
+					<div class="roles">
+						<Pill><Icon icon="code" size="1.33em" /> <a href="https://google.com"> CV </a> </Pill>
 					</div>
 				</Hero>
 
-				<img
-					alt="Jeanine White smiling in a red plaid shirt and tortoise shell glasses"
-					width="480"
-					height="620"
-					src="/assets/portrait.jpg"
-				/>
 			</header>
 
 			<Skills />
@@ -52,8 +48,8 @@ const projects = (await getCollection('work'))
 		<main class="wrapper stack gap-20 lg:gap-48">
 			<section class="section with-background with-cta">
 				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>Selected Work</h3>
-					<p>Take a look below at some of my featured work for clients from the past few years.</p>
+					<h3>Mes projets</h3>
+					<p>Une partie de mes projets personnels, comme professionnels.</p>
 				</header>
 
 				<div class="gallery">
@@ -70,7 +66,7 @@ const projects = (await getCollection('work'))
 
 				<div class="cta">
 					<CallToAction href="/work/">
-						View All
+						Voir tous
 						<Icon icon="arrow-right" size="1.2em" />
 					</CallToAction>
 				</div>
@@ -78,17 +74,16 @@ const projects = (await getCollection('work'))
 
 			<section class="section with-background bg-variant">
 				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>Mentions</h3>
+					<h3>Outils & langages</h3>
 					<p>
-						I have been fortunate enough to receive praise for my work in several publications. Take
-						a look below to learn more.
+						Un aperçu des technologies que j’utilise pour concevoir mes projets.
 					</p>
 				</header>
 
 				<div class="gallery">
 					<Grid variant="small">
 						{
-							['Medium', 'BuzzFeed', 'The Next Web', 'awwwards.', 'TechCrunch'].map((brand) => (
+							['Java / JavaFX', 'HTML / CSS', 'Python', 'GIT', 'Github', 'Gitlab'].map((brand) => (
 								<li class="mention-card">
 									<p>{brand}</p>
 								</li>
@@ -109,6 +104,8 @@ const projects = (await getCollection('work'))
 		flex-direction: column;
 		align-items: center;
 		gap: 2rem;
+		padding-top: 50px;
+		padding-bottom: 50px;
 	}
 
 	.roles {
@@ -218,6 +215,8 @@ const projects = (await getCollection('work'))
 
 		.gallery {
 			grid-area: gallery;
+			font-size: 23px;
+			font-weight: bold;
 		}
 
 		.cta {
