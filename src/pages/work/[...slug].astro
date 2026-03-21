@@ -38,6 +38,18 @@ const { Content } = await render(entry);
 								{entry.data.tags.map((t) => <Pill>{t}</Pill>)}
 							</div>
 							<p class="description">{entry.data.description}</p>
+							{entry.data.links && (
+								<div class="tags">
+									{entry.data.links.map((link) => (
+										<Pill>
+											<Icon icon={link.icon as any} size="1.33em" />
+											<a href={link.href} target="_blank" rel="noopener noreferrer">
+												{link.label}
+											</a>
+										</Pill>
+									))}
+								</div>
+							)}
 						</div>
 					</Hero>
 				</div>
