@@ -99,6 +99,8 @@ const { Content } = await render(entry);
 	.content {
 		max-width: 65ch;
 		margin-inline: auto;
+		overflow-wrap: break-word; /* ← empêche les mots longs de déborder */
+		word-break: break-word;
 	}
 
 	.content > :global(* + *) {
