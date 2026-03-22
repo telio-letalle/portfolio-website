@@ -4,54 +4,132 @@ import Hero from '../components/Hero.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<BaseLayout title="About | Telio Letalle" description="About Telio Letalle Lorem Ipsum">
+<BaseLayout title="À propos | Telio Letalle" description="En savoir plus sur Telio Letalle, étudiant en BUT Informatique passionné de développement web.">
 	<div class="stack gap-20">
 		<main class="wrapper about">
 			<Hero
-				title="About"
-				tagline="Thanks for stopping by. Read below to learn more about myself and my background."
+				title="À propos"
+				tagline="Merci de votre visite. Lisez ci-dessous pour en savoir plus sur moi et mon parcours."
 			>
-				<img
-					width="1553"
-					height="873"
-					src="/assets/at-work.jpg"
-					alt="Jeanine White at work with a colleague"
-				/>
 			</Hero>
 
 			<section>
-				<h2 class="section-title">Background</h2>
+				<h2 class="section-title">Qui suis-je</h2>
 				<div class="content">
 					<p>
-						Lorem ipsum dolor sit amet, <a href="https://astro.build/">Astro</a> makes people happy. Sed
-						do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin nibh nisl condimentum
-						id venenatis a condimentum vitae. Dapibus ultrices in iaculis nunc. Arcu odio ut sem nulla
-						pharetra diam sit amet. Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare.
+						Originaire du Nord (59), je vis maintenant dans l'Hérault, près de Sète. Passionné d'informatique depuis le collège, j'ai d'abord suivi un BUT Réseaux &amp; Télécommunications avant de me réorienter vers le BUT Informatique — une décision qui colle bien mieux à ce que je veux faire, et que je compte mener jusqu'au bout.
 					</p>
 					<p>
-						Arcu dui vivamus arcu felis bibendum ut tristique et egestas. Eget gravida cum sociis
-						natoque penatibus. Cras fermentum odio eu feugiat pretium nibh. Proin nibh nisl
-						condimentum id venenatis. Porta nibh venenatis cras sed felis eget velit. Id diam vel
-						quam elementum pulvinar etiam non.
+						Curieux, rigoureux et adaptable, j'aime comprendre comment les choses fonctionnent et construire des projets qui ont du sens.
 					</p>
 					<p>
-						Ultrices tincidunt arcu non sodales neque sodales ut. Sed enim ut sem viverra aliquet
-						eget sit amet. Lacus luctus accumsan tortor posuere ac ut consequat semper viverra.
-						Viverra accumsan in nisl nisi scelerisque eu ultrices. In massa tempor nec feugiat nisl
-						pretium fusce.
+						Je recherche un stage pour mettre en pratique mes compétences, découvrir le monde professionnel et agrandir mon réseau. La suite après mon BUT ? Je garde l'esprit ouvert.
 					</p>
 				</div>
 			</section>
+
 			<section>
-				<h2 class="section-title">Education</h2>
+				<h2 class="section-title">Formation</h2>
 				<div class="content">
-					<p>Corporis voluptates tenetur laudantium.</p>
+					<div class="timeline">
+						<div class="timeline-item">
+							<span class="timeline-date">2025 – 2028</span>
+							<div class="timeline-body">
+								<h3>BUT Informatique</h3>
+								<p>IUT de Montpellier-Sète — En cours. Je me forme au développement logiciel, web et aux fondamentaux de l'informatique.</p>
+							</div>
+						</div>
+						<div class="timeline-item">
+							<span class="timeline-date">2024 – 2025</span>
+							<div class="timeline-body">
+								<h3>BUT Réseaux & Télécommunications</h3>
+								<p>IUT de Montpellier-Sète — 1ère année. Formation aux réseaux informatiques, architecture système et télécommunications avant réorientation.</p>
+							</div>
+						</div>
+						<div class="timeline-item">
+							<span class="timeline-date">2024</span>
+							<div class="timeline-body">
+								<h3>Baccalauréat général</h3>
+								<p>Spécialités Mathématiques & Numérique et Sciences Informatiques (NSI).</p>
+							</div>
+						</div>
+						<div class="timeline-item">
+							<span class="timeline-date">2021</span>
+							<div class="timeline-body">
+								<h3>Diplôme National du Brevet</h3>
+							</div>
+						</div>
+					</div>
 				</div>
 			</section>
+
 			<section>
-				<h2 class="section-title">Skills</h2>
+				<h2 class="section-title">Expériences</h2>
 				<div class="content">
-					<p>officia unde omnis</p>
+					<div class="timeline">
+						<div class="timeline-item">
+							<span class="timeline-date">Décembre 2020</span>
+							<div class="timeline-body">
+								<h3>Stage d'observation – Administrateur réseau</h3>
+								<p class="timeline-company">Mairie de Loupian</p>
+								<p>Découverte du métier d'administrateur réseau au sein d'une collectivité locale. Participation à la mise à jour de postes sous Windows 10 et observation de l'architecture réseau complète de la ville : équipements, câblage, topologie et organisation des flux.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<h2 class="section-title">Compétences</h2>
+				<div class="content">
+					<div class="skills-grid">
+						<div class="skill-group">
+							<h4>Développement</h4>
+							<ul>
+								<li>HTML / CSS / JavaScript</li>
+								<li>PHP / MySQL</li>
+								<li>Java</li>
+								<li>Python</li>
+							</ul>
+						</div>
+						<div class="skill-group">
+							<h4>Outils</h4>
+							<ul>
+								<li>Git / GitHub / GitLab</li>
+								<li>SQL</li>
+								<li>Terminal / Bash</li>
+							</ul>
+						</div>
+						<div class="skill-group">
+							<h4>Savoir-être</h4>
+							<ul>
+								<li>Rigueur</li>
+								<li>Curiosité</li>
+								<li>Adaptabilité</li>
+								<li>Travail en équipe</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<h2 class="section-title">Langues</h2>
+				<div class="content">
+					<ul class="lang-list">
+						<li><strong>Français</strong> — Langue maternelle</li>
+						<li><strong>Anglais</strong> — Niveau scolaire, en progression</li>
+						<li><strong>Espagnol</strong> — Débutant</li>
+					</ul>
+				</div>
+			</section>
+
+			<section>
+				<h2 class="section-title">Centres d'intérêt</h2>
+				<div class="content">
+					<p>
+						En dehors du code, je pratique le sport, et je lis régulièrement. Ces activités m'aident à garder l'équilibre, à rester curieux et à développer une discipline que je retrouve aussi dans mes projets techniques.
+					</p>
 				</div>
 			</section>
 		</main>
@@ -65,12 +143,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 		display: flex;
 		flex-direction: column;
 		gap: 3.5rem;
-	}
-
-	img {
-		margin-top: 1.5rem;
-		border-radius: 1.5rem;
-		box-shadow: var(--shadow-md);
 	}
 
 	section {
@@ -90,6 +162,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 		grid-column: 2 / 4;
 	}
 
+	.content p {
+		margin-bottom: 1rem;
+	}
+
 	.content :global(a) {
 		text-decoration: 1px solid underline transparent;
 		text-underline-offset: 0.25em;
@@ -99,6 +175,77 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 	.content :global(a:hover),
 	.content :global(a:focus) {
 		text-decoration-color: currentColor;
+	}
+
+	/* Timeline */
+	.timeline {
+		display: flex;
+		flex-direction: column;
+		gap: 2.5rem;
+		margin-bottom: 2rem;
+	}
+
+	.timeline-item {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		border-left: 2px solid var(--accent-regular);
+		padding-left: 1.25rem;
+		padding-top: 0.25rem;
+		padding-bottom: 0.5rem;
+	}
+
+	.timeline-date {
+		font-size: var(--text-sm);
+		color: var(--accent-regular);
+		font-weight: 600;
+		margin-bottom: 0.25rem;
+	}
+
+	.timeline-body h3 {
+		color: var(--gray-0);
+		margin: 0 0 0.75rem 0;
+	}
+
+	.timeline-company {
+		color: var(--gray-400);
+		font-style: italic;
+		margin-bottom: 0.5rem !important;
+	}
+
+	.timeline-body p {
+		margin: 0 0 0.5rem 0 !important;
+	}
+
+	/* Skills grid */
+	.skills-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+		gap: 2.5rem;
+	}
+
+	.skill-group h4 {
+		color: var(--gray-0);
+		margin-bottom: 1rem;
+	}
+
+	.skill-group ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		gap: 0.6rem;
+		color: var(--gray-300);
+	}
+
+	/* Languages */
+	.lang-list {
+		list-style: none;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		gap: 0.70rem;
 	}
 
 	@media (min-width: 50em) {
@@ -114,6 +261,26 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 		section {
 			display: contents;
 			font-size: var(--text-lg);
+		}
+
+		.timeline-item {
+			flex-direction: row;
+			gap: 1.5rem;
+			align-items: flex-start;
+			border-left: none;
+			padding-left: 0;
+			border-top: 2px solid var(--accent-regular);
+			padding-top: 1rem;
+		}
+
+		.timeline-date {
+			min-width: 120px;
+			text-align: right;
+		}
+
+		.timeline-body {
+			border-left: 2px solid var(--gray-800);
+			padding-left: 1rem;
 		}
 	}
 </style>
