@@ -36,9 +36,8 @@ const isCurrentPage = (href: string) => {
 		</a>
 		<menu-button>
 			<template>
-				<button class="menu-button" aria-expanded="false">
-					<span class="sr-only">Menu</span>
-					<Icon icon="list" />
+				<button aria-label="Toggle menu" aria-expanded="false">
+					<Icon icon="heart" size="1.5em" />
 				</button>
 			</template>
 		</menu-button>
@@ -161,38 +160,6 @@ const isCurrentPage = (href: string) => {
 		line-height: 1.1;
 		color: var(--gray-0);
 		text-decoration: none;
-	}
-
-	.menu-button {
-		position: relative;
-		display: flex;
-		border: 0;
-		border-radius: 999rem;
-		padding: 0.5rem;
-		font-size: 1.5rem;
-		color: var(--gray-300);
-		background: radial-gradient(var(--gray-900), var(--gray-800) 150%);
-		box-shadow: var(--shadow-md);
-	}
-
-	.menu-button[aria-expanded='true'] {
-		color: var(--gray-0);
-		background:
-			linear-gradient(180deg, var(--gray-600), transparent),
-			radial-gradient(var(--gray-900), var(--gray-800) 150%);
-	}
-
-	.menu-button[hidden] {
-		display: none;
-	}
-
-	.menu-button::before {
-		position: absolute;
-		inset: -1px;
-		content: '';
-		background: var(--gradient-stroke);
-		border-radius: 999rem;
-		z-index: -1;
 	}
 
 	.menu-content {
