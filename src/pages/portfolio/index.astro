@@ -1,0 +1,179 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Portfolio" description="Mon portfolio académique BUT Informatique">
+	<div class="stack">
+		<div class="wrapper stack gap-80">
+			<header class="hub-hero">
+				<div class="eyebrow">Portfolio académique</div>
+				<h1>Mes semestres</h1>
+				<p class="subtitle">
+					Mes portfolios de compétences du BUT Informatique,<br />
+					semestre par semestre.
+				</p>
+                <p class="ps ps-top">
+                    Cette page ainsi que les autres, dans leurs conceptions visuelles, sont réalisées avec Astro, un générateur de site statique moderne et performant via des modèles.
+                </p>
+                <p class="ps ps-bottom">
+                    Toutefois, les contenus présentés dans ces portfolios <strong>ne sont pas générés automatiquement par Astro.</strong>
+                </p>
+			</header>
+
+			<div class="cards">
+				<a href="/portfolio/s1/" class="semester-card">
+					<div class="card-tag">Semestre 1</div>
+					<h2>BUT Info · S1</h2>
+					<p>
+						Initiation au développement Java, bases de données SQL, systèmes d'exploitation,
+						conduite de projet et collaboration en équipe.
+					</p>
+					<div class="card-footer">
+						<span class="pill">6 compétences</span>
+						<span class="arrow">→</span>
+					</div>
+				</a>
+
+				<a href="/portfolio/s2/" class="semester-card">
+					<div class="card-tag">Semestre 2</div>
+					<h2>BUT Info · S2</h2>
+					<p>
+						SAE IHM Dominion Seaside, Discovery Piscine 42, base de données avancée
+						et programmation système en C.
+					</p>
+					<div class="card-footer">
+						<span class="pill">6 compétences</span>
+						<span class="arrow">→</span>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</BaseLayout>
+
+<style>
+	.hub-hero {
+		text-align: center;
+		padding: 1rem 1rem 1rem;
+	}
+
+	.eyebrow {
+		font-family: var(--font-brand);
+		font-size: var(--text-sm);
+		color: var(--accent-regular);
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
+		margin-bottom: 1rem;
+	}
+
+	h1 {
+		font-size: var(--text-4xl);
+		color: var(--gray-0);
+		margin-bottom: 1rem;
+	}
+
+	.subtitle {
+		color: var(--gray-400);
+		font-size: var(--text-md);
+		line-height: 1.7;
+	}
+
+    .ps-top {
+        padding-top: 3rem;
+    }
+    .ps {
+        font-style: italic;
+    }
+    .ps-bottom {
+        padding-bottom: 3rem;
+    }
+
+	.cards {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 1.5rem;
+		padding: 2rem 0 4rem;
+	}
+
+	.semester-card {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+		padding: 2rem 2rem 1.5rem;
+		background: var(--gradient-subtle);
+		border: 1px solid var(--gray-800);
+		border-radius: 1.5rem;
+		text-decoration: none;
+		color: inherit;
+		box-shadow: var(--shadow-sm);
+		transition:
+			box-shadow var(--theme-transition),
+			border-color var(--theme-transition),
+			transform var(--theme-transition);
+	}
+
+	.semester-card:hover {
+		box-shadow: var(--shadow-md);
+		border-color: var(--accent-regular);
+		transform: translateY(-4px);
+	}
+
+	.card-tag {
+		font-family: var(--font-brand);
+		font-size: var(--text-sm);
+		color: var(--accent-regular);
+		font-weight: 600;
+		letter-spacing: 0.05em;
+	}
+
+	.semester-card h2 {
+		font-size: var(--text-2xl);
+		color: var(--gray-0);
+		line-height: 1.2;
+	}
+
+	.semester-card p {
+		color: var(--gray-400);
+		font-size: var(--text-md);
+		line-height: 1.7;
+		flex: 1;
+	}
+
+	.card-footer {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-top: 0.5rem;
+	}
+
+	.pill {
+		display: inline-block;
+		padding: 0.3rem 0.9rem;
+		border-radius: 999rem;
+		border: 1px solid var(--gray-800);
+		font-size: var(--text-sm);
+		color: var(--gray-400);
+		font-family: var(--font-brand);
+	}
+
+	.arrow {
+		font-size: var(--text-xl);
+		color: var(--accent-regular);
+		transition: transform var(--theme-transition);
+	}
+
+	.semester-card:hover .arrow {
+		transform: translateX(4px);
+	}
+
+	@media (min-width: 50em) {
+		.cards {
+			grid-template-columns: 1fr 1fr;
+			gap: 2rem;
+		}
+
+		h1 {
+			font-size: var(--text-4xl);
+		}
+	}
+</style>
