@@ -1,7 +1,7 @@
 ---
 title: Nuit de l'Info
 publishDate: 2026-01-01
-img: /assets/nuit-info.jpg
+img: /assets/nuit-info.png
 img_alt: Nuit de l'Info 2025
 description: |
   Hackathon national de développement web réalisé en équipe de 10 étudiants, du coucher au lever du soleil.
@@ -10,6 +10,10 @@ tags:
   - Web
   - React
   - Travail en équipe
+links:
+  - label: GitHub
+    href: https://github.com/CapyNDI2025
+    icon: github-logo
 ---
 
 Participation à la **Nuit de l'Info**, un hackathon national qui se déroule chaque année en une seule nuit : de 17h30 au coucher du soleil jusqu'à 8h le lendemain matin.

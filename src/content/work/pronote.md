@@ -1,7 +1,7 @@
 ---
 title: Pronote
 publishDate: 2026
-img: /assets/pronote-2.jpg
+img: /assets/pronote-2.png
 description: |
   Projet web complet (front-end HTML/CSS/JS + back-end PHP/MySQL) réalisé en 1re année de BUT Réseaux et Télécommunications.
 tags:
@@ -32,7 +32,7 @@ Réalisé lors de l'année scolaire 2024–2025 avec Nicolas Massé : conception
 - **Base de données** : MySQL (modèle relationnel, stockage, requêtes).
 
 
-![Aperçu du projet Pronote](/assets/pronote-4.jpg)
+![Aperçu du projet Pronote](/assets/pronote-4.png)
 
 ## Ce que ce projet m’a apporté
 
