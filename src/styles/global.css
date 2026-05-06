@@ -159,28 +159,35 @@ h4,
 h5 {
 	line-height: 1.1;
 	font-family: var(--font-brand);
-	font-weight: 600;
 	color: var(--gray-100);
 }
 
 h1 {
 	font-size: var(--text-5xl);
+	font-weight: 800;
 }
 
 h2 {
 	font-size: var(--text-4xl);
+	font-weight: 700;
 }
 
 h3 {
 	font-size: var(--text-3xl);
+	font-weight: normal;
 }
 
 h4 {
 	font-size: var(--text-2xl);
+	font-weight: 500;
 }
 
 h5 {
 	font-size: var(--text-xl);
+	color: var(--gray-200);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.2;
 }
 
 /* Utilities */
