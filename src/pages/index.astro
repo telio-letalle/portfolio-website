@@ -113,6 +113,12 @@ const projects = (await getCollection('work'))
 		padding-bottom: 50px;
 	}
 
+	.mention-card:hover {
+		box-shadow: var(--shadow-md);
+		border-color: var(--accent-regular);
+		transform: translateY(-4px);
+	}
+
 	.roles {
 		margin-top: 0.5rem;
 		display: flex;

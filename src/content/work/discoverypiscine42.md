@@ -1,7 +1,7 @@
 ---
 title: Discovery Piscine 42
 publishDate: 2026-05-01
-img: /assets/42.jpg
+img: /assets/42.png
 img_alt: Discovery Piscine 42
 description: |
   Parcours intensif d’initiation au développement couvrant le shell, le HTML, le CSS et le JavaScript, basé sur l’apprentissage autonome et la résolution de problèmes.
