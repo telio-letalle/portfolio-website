@@ -30,7 +30,11 @@ const isCurrentPage = (href: string) => {
 
 <nav>
 	<div class="menu-header">
-		<a href="/" class="site-title">
+		<div id="toast" class="toast">
+			<strong>Mise à jour</strong>
+			<span>Ce site a récemment été amélioré. Votre retour m’intéresse.</span>
+		</div>
+		<a href="/" class="site-title" id="logo-trigger">
 			<Icon icon="terminal-window" color="var(--accent-regular)" size="2.em" gradient />
 			Telio Letalle
 		</a>
@@ -101,6 +105,23 @@ const isCurrentPage = (href: string) => {
 </nav>
 
 <script>
+	const logo = document.getElementById('logo-trigger');
+	const toast = document.getElementById('toast');
+
+	function showToast() {
+		toast.classList.add('show');
+
+		setTimeout(() => {
+			toast.classList.remove('show');
+		}, 3500);
+	}
+
+	logo?.addEventListener('click', (e) => {
+		e.preventDefault();
+		e.stopPropagation();
+
+		showToast();
+	});
 	class MenuButton extends HTMLElement {
 		constructor() {
 			super();
@@ -138,6 +159,42 @@ const isCurrentPage = (href: string) => {
 </script>
 
 <style>
+	.toast {
+		position: fixed;
+		top: 100px;
+		left: 50.3%;
+		transform: translateX(-50%) translateY(-20px);
+
+		background: rgba(25, 25, 35, 0.75);
+		backdrop-filter: blur(18px);
+
+		color: white;
+
+		padding: 14px 18px;
+		border-radius: 18px;
+
+		display: flex;
+		flex-direction: column;
+		gap: 4px;
+
+		min-width: 280px;
+
+		box-shadow: 0 10px 35px rgba(0, 0, 0, 0.3);
+
+		opacity: 0;
+		pointer-events: none;
+
+		transition:
+			opacity 0.35s ease,
+			transform 0.35s ease;
+
+		z-index: 10000;
+	}
+
+	.toast.show {
+		opacity: 1;
+		transform: translateX(-50%) translateY(0);
+	}
 	nav {
 		z-index: 9999;
 		position: relative;

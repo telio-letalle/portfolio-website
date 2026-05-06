@@ -32,11 +32,11 @@ const projects = (await getCollection('work'))
 					align="start"
 				>
 					<div class="roles">
-						<Pill><Icon icon="code" size="1.33em" /> Developpement</Pill>
+						<Pill><Icon icon="code" size="1.33em" /> Développement</Pill>
 					</div>
-					<h5>Liens utiles :</h5>
+					<h5 id="liens-utiles">Liens utiles :</h5>
 					<div class="roles">
-						<Pill><Icon icon="code" size="1.33em" /> <a href="https://google.com"> CV </a> </Pill>
+						<Pill><Icon icon="code" size="1.33em" /> <a href="workinprocess.com"> CV </a> </Pill>
 					</div>
 				</Hero>
 
@@ -117,6 +117,10 @@ const projects = (await getCollection('work'))
 		box-shadow: var(--shadow-md);
 		border-color: var(--accent-regular);
 		transform: translateY(-4px);
+	}
+
+	#liens-utiles {
+		padding-top: 2rem;
 	}
 
 	.roles {
