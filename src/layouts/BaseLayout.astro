@@ -27,6 +27,30 @@ const { title, description } = Astro.props;
 		</div>
 
 		<script>
+			document.addEventListener('DOMContentLoaded', () => {
+				const elements = document.querySelectorAll(
+					'header.hero, section, main > *,body > div, section > div'
+				);
+
+				const observer = new IntersectionObserver(
+					(entries) => {
+						entries.forEach((entry) => {
+							if (entry.isIntersecting) {
+								entry.target.classList.add('is-visible');
+								observer.unobserve(entry.target);
+							}
+						});
+					},
+					{
+						threshold: 0.10
+					}
+				);
+
+				elements.forEach((element) => {
+					element.classList.add('reveal');
+					observer.observe(element);
+				});
+			});
 			// Add “loaded” class once the document has completely loaded.
 			addEventListener('load', () => document.documentElement.classList.add('loaded'));
 		</script>

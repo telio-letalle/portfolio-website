@@ -135,8 +135,7 @@ const projects = (await getCollection('work'))
 		flex-direction: column;
 		align-items: center;
 		gap: 2rem;
-		padding-top: 50px;
-		padding-bottom: 50px;
+		padding-block: 50px;
 	}
 
 	.mention-card:hover {
@@ -157,14 +156,6 @@ const projects = (await getCollection('work'))
 		justify-content: center;
 	}
 
-	.hero img {
-		aspect-ratio: 5 / 4;
-		object-fit: cover;
-		object-position: top;
-		border-radius: 1.5rem;
-		box-shadow: var(--shadow-md);
-	}
-
 	/* Lien à l'intérieur du Pill : noir en thème clair, blanc en thème sombre */
 	.pill-link,
 	.pill-link:visited {
@@ -174,28 +165,6 @@ const projects = (await getCollection('work'))
 
 	.pill-link:hover {
 		text-decoration: underline;
-	}
-
-	@media (min-width: 50em) {
-		.hero {
-			display: grid;
-			grid-template-columns: 6fr 4fr;
-			padding-inline: 2.5rem;
-			gap: 3.75rem;
-		}
-
-		.roles {
-			margin-top: 0.5rem;
-			display: flex;
-			gap: 0.5rem;
-			justify-content: left;
-		}
-
-		.hero img {
-			aspect-ratio: 3 / 4;
-			border-radius: 4.5rem;
-			object-fit: cover;
-		}
 	}
 
 	/* ====================================================== */
@@ -217,7 +186,31 @@ const projects = (await getCollection('work'))
 		font-size: var(--text-2xl);
 	}
 
+	.mention-card {
+		display: flex;
+		height: 7rem;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		border: 1px solid var(--gray-800);
+		border-radius: 1.5rem;
+		color: var(--gray-300);
+		background: var(--gradient-subtle);
+		box-shadow: var(--shadow-sm);
+	}
+
 	@media (min-width: 50em) {
+		.hero {
+			display: grid;
+			grid-template-columns: 6fr 4fr;
+			padding-inline: 2.5rem;
+			gap: 3.75rem;
+		}
+
+		.roles {
+			justify-content: flex-start;
+		}
+
 		.section {
 			grid-template-columns: repeat(4, 1fr);
 			grid-template-areas:
@@ -255,26 +248,8 @@ const projects = (await getCollection('work'))
 		.cta {
 			grid-area: cta;
 		}
-	}
 
-	/* ====================================================== */
-
-	.mention-card {
-		display: flex;
-		height: 7rem;
-		justify-content: center;
-		align-items: center;
-		text-align: center;
-		border: 1px solid var(--gray-800);
-		border-radius: 1.5rem;
-		color: var(--gray-300);
-		background: var(--gradient-subtle);
-		box-shadow: var(--shadow-sm);
-	}
-
-	@media (min-width: 50em) {
 		.mention-card {
-			border-radius: 1.5rem;
 			height: 9.5rem;
 		}
 	}
